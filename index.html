@@ -62,28 +62,28 @@
     <section class="container mt-4">
       <form class="shadow px-2 px-md-4 m-auto rounded-3 py-3">
         <h1 class="text-center">Carga de tareas</h1>
-        <p>Ingresa la tarea que desees guardar y haz click en el botón Guardar. La tarea se debe mostrar en la tabla que figura debajo. Tienes la opción de Eliminar una tarea de la tabla.</p>
+        <p>Para agregar una tarea a la lista que se muestra debajo, ingresa su nombre y descripción, luego haz clic en el botón Agregar Tarea. Tienes la opción de Eliminar una tarea en caso de necesitarlo.</p>
         <div class="mb-3">
-          <label for="tarea" class="form-label">Ingresar tarea:</label>
+          <label for="tarea" class="form-label">Nombre de Tarea:</label>
           <input type="text" class="form-control rounded-3" id="tarea" placeholder="Tarea" minlength="5" maxlength="50" required>
         </div>
         <div class="mb-3">
-          <label for="descripcion" class="form-label">Ingresar Descripción:</label>
+          <label for="descripcion" class="form-label">Descripción de Tarea:</label>
           <textarea type="text" class="form-control rounded-3" id="descripcion" placeholder="Descripción" minlength="10" maxlength="500" required></textarea>
         </div>
         <div class="mb-3 containerButton text-center">
-          <button class="btn btn-primary rounded-3 px-5 fw-bold" id="btnGuardarTarea">Guardar tarea</button>
+          <button class="btn btn-primary rounded-3 px-5 fw-bold" id="btnAgregarTarea">Agregar Tarea</button>
         </div>
       </form>
-      <div class="text-center mt-4 m-auto">
+      <div class="text-center mt-4 m-auto table-responsive-sm">
         <h2>Lista de tareas</h2>
-        <table class="table table-striped shadow m-auto" id="table">
+        <table class="table table-striped shadow m-auto mb-5 text-center" id="table">
           <thead>
             <tr>
               <th>ID</th>
               <th>Tarea</th>
               <th>Descripción</th>
-              <th>Eliminar</th>
+              <th>Acción</th>
             </tr>
           </thead>
           <tbody> 
